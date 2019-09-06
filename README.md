@@ -17,13 +17,14 @@
   The original mxnet model has merged the preporcess(means and norms) and the detection output tensor has been sliced with the mxnet slice op in the symbol ,which caused convert failure.
 so,you need to remove these ops ,in that way you can convert the model to onnx successfully.I will show you how to do that step by step, so when you train the model by yourself,
 you can convert to your own model to onnx , and do more things.
+
   * First ,follow the author's original  github to build the devolopment environment.
-  * Modify symbol_10_320_20L_5scales_v2.py (your_path/A-Light-and-Fast-Face-Detector-for-Edge-Devices\face_detection\symbol_farm) 
-    in function loss_branch,Note out（注释掉） the line 57(predict_score = mxnet.symbol.slice_axis(predict_score, axis=1, begin=0, end=1) ,
-	in function get_net_symbol, Note out（注释掉）the line 99(data = (data - 127.5) / 127.5,preprocess).
-  * in this path , by doing "python symbol_10_320_20L_5scales_v2.py	",generate the symbol.json
   
-  symbol_10_560_25L_8scales_v1.py do the same thing .
+  * Modify symbol_10_320_20L_5scales_v2.py (your_path/A-Light-and-Fast-Face-Detector-for-Edge-Devices\face_detection\symbol_farm) 
+      in function loss_branch,Note out（注释掉） the line 57(predict_score = mxnet.symbol.slice_axis(predict_score, axis=1, begin=0, end=1) ,
+	  in function get_net_symbol, Note out（注释掉）the line 99(data = (data - 127.5) / 127.5,preprocess).
+	  
+  * Next,in this path , by doing "python symbol_10_320_20L_5scales_v2.py	",generate the symbol.json. symbol_10_560_25L_8scales_v1.py do the same thing .
   
   * To generate onnx model, cd your_path\A-Light-and-Fast-Face-Detector-for-Edge-Devices\face_detection\deploy_tensorrt
     python to_onnx.py 
