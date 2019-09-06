@@ -10,8 +10,18 @@
  * You can set the input tensor shape smaller ,since you need to reduce the memory and accelerate the inference.
  * You can set the scale_num=8 to use another larger model. 
  * I just test it on vs2019 PC and the result is correct compared to original implementation,you can use the code to another device such as android、RK3399、and so on.
+
+## result show
+
+![demo_res.jpg](https://raw.githubusercontent.com/SyGoing/LFFD-MNN/master/data/demo_res.jpg)
+
+![selfie_res](https://raw.githubusercontent.com/SyGoing/LFFD-MNN/master/data/selfie_res.jpg)
+
+![test_5_res](https://raw.githubusercontent.com/SyGoing/LFFD-MNN/master/data/test_5_res.jpg)
+
 ## TODO(you can refer this implementation to do more)
  * TensorRT demo: mmxnet model --> onnx-->trt engine
  * openvino demo: mxnet model-->onnx-->openvino
+  
   
   
