@@ -43,8 +43,10 @@ you can convert to your own model to onnx , and do more things.
 ![test_5_res](https://raw.githubusercontent.com/SyGoing/LFFD-MNN/master/data/test_5_res.jpg)
 
 ## TODO(you can refer this implementation to do more)
- * TensorRT demo: mmxnet model --> onnx-->trt engine
- * openvino demo: mxnet model-->onnx-->openvino
+ - [x] MNN finished
+ - [x] NCNN finished
+ - [x] openvino demo: mxnet model-->onnx-->openvino (coming soon)
+ - [ ] TensorRT demo: mmxnet model --> onnx-->trt engine
   
   
   
