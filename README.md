@@ -46,7 +46,7 @@ you can convert to your own model to onnx , and do more things.
  - [x] MNN finished
  - [x] NCNN finished
  - [x] openvino demo: mxnet model-->onnx-->openvino (coming soon)
- - [x] TensorRT demo: mxnet model --> onnx-->trt engine
+ - [x] TensorRT demo: mxnet model --> onnx-->trt engine(coming soon)
   
   
   
