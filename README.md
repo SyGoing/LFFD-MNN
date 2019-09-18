@@ -45,8 +45,8 @@ you can convert to your own model to onnx , and do more things.
 ## TODO(you can refer this implementation to do more)
  - [x] MNN finished
  - [x] NCNN finished
- - [x] openvino demo: mxnet model-->onnx-->openvino (coming soon)
- - [x] TensorRT demo: mxnet model --> onnx-->trt engine(coming soon)
+ - [x] openvino demo: mxnet model-->onnx-->openvino (finished and coming soon)
+ - [x] TensorRT demo: mxnet model --> onnx-->trt engine(finished and coming soon)
   
   
   
