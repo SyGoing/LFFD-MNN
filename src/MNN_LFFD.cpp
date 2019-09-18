@@ -245,6 +245,8 @@ void LFFD::generateBBox(std::vector<FaceInfo>& bbox_collection, MNN::Tensor* sco
 
 	delete[] RF_center_Xs; RF_center_Xs = NULL;
 	delete[] RF_center_Ys; RF_center_Ys = NULL;
+	delete[] RF_center_Xs_mat; RF_center_Xs_mat = NULL;
+	delete[] RF_center_Ys_mat; RF_center_Ys_mat = NULL;
 	delete[] x_lt_mat; x_lt_mat = NULL;
 	delete[] y_lt_mat; y_lt_mat = NULL;
 	delete[] x_rb_mat; x_rb_mat = NULL;
