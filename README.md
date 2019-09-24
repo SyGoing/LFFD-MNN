@@ -7,9 +7,9 @@
   
   official github: [LFFD](https://github.com/YonghaoHe/A-Light-and-Fast-Face-Detector-for-Edge-Devices)
   
-  Also,my ncnn implementation is [here](https://github.com/SyGoing/LFFD-with-ncnn)
+  My ncnn implementation is [here](https://github.com/SyGoing/LFFD-with-ncnn)
   
-  OpenVINO [implementation](https://github.com/SyGoing/LFFD-OpenVINO)
+  My OpenVINO [implementation](https://github.com/SyGoing/LFFD-OpenVINO)
 ## some tips
  * You can set the input tensor shape smaller ,since you need to reduce the memory and accelerate the inference.
  * You can set the scale_num=8 to use another larger model. 
