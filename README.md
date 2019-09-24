@@ -8,6 +8,8 @@
   official github: [LFFD](https://github.com/YonghaoHe/A-Light-and-Fast-Face-Detector-for-Edge-Devices)
   
   Also,my ncnn implementation is [here](https://github.com/SyGoing/LFFD-with-ncnn)
+  
+  OpenVINO [implementation](https://github.com/SyGoing/LFFD-OpenVINO)
 ## some tips
  * You can set the input tensor shape smaller ,since you need to reduce the memory and accelerate the inference.
  * You can set the scale_num=8 to use another larger model. 
@@ -45,7 +47,7 @@ you can convert to your own model to onnx , and do more things.
 ## TODO(you can refer this implementation to do more)
  - [x] MNN finished
  - [x] NCNN finished
- - [x] openvino demo: mxnet model-->onnx-->openvino (finished and coming soon)
+ - [x] openvino demo: mxnet model-->onnx-->openvino 
  - [x] TensorRT demo: mxnet model --> onnx-->trt engine(finished and coming soon)
   
   
