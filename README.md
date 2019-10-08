@@ -39,10 +39,15 @@ you can convert to your own model to onnx , and do more things.
  * Follow the MNN official doc to compile the MNN lib
  * Put the lib in MNN folder (include and lib)
  * compile and test
+ 
    cd LFFD-MNN 
+   
    mkdir build
+   
    cd build
+   
    cmake ..
+   
    make
    
    ./test ../models ../data/demo.jpg
