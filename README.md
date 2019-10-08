@@ -36,7 +36,17 @@ you can convert to your own model to onnx , and do more things.
 	
   * In the last, you can use the MNN's MNNConvert to convert the model. have fun!
 ## test
- cd LFFD-MNN, mkdir build ,cd build,cmake .., make
+ * Follow the MNN official doc to compile the MNN lib
+ * Put the lib in MNN folder (include and lib)
+ * compile and test
+   cd LFFD-MNN 
+   mkdir build
+   cd build
+   cmake ..
+   make
+   
+   ./test ../models ../data/demo.jpg
+   
 ## result show
 
 ![demo_res.jpg](https://raw.githubusercontent.com/SyGoing/LFFD-MNN/master/data/demo_res.jpg)
