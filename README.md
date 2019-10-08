@@ -35,7 +35,12 @@ you can convert to your own model to onnx , and do more things.
 	by doing this, you can find the generated onnx model in your_path\A-Light-and-Fast-Face-Detector-for-Edge-Devices\face_detection\deploy_tensorrt\onnx_files
 	
   * In the last, you can use the MNN's MNNConvert to convert the model. have fun!
- 
+## test
+ cd LFFD-MNN 
+ mkdir build 
+ cd build
+ cmake ..
+ make
 ## result show
 
 ![demo_res.jpg](https://raw.githubusercontent.com/SyGoing/LFFD-MNN/master/data/demo_res.jpg)
